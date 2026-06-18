@@ -9,203 +9,216 @@
 
 body {
   font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", -apple-system, sans-serif;
-  background: #f3f3f3;
-  color: #3a3a3a;
+  background: #f3e5ff;
+  color: #444;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
 
-.container { max-width: 640px; margin: 0 auto; padding: 0 16px 20px; }
+.container { max-width: 500px; margin: 0 auto; padding: 0 16px 20px; }
 
 /* ===== Header ===== */
 .header {
-  text-align: center;
-  padding: 32px 0 20px;
-  border-bottom: 1px solid #e2e2e2;
-  margin-bottom: 4px;
+  text-align: center; padding: 36px 0 8px;
 }
-.header .icon { font-size: 36px; margin-bottom: 8px; }
-.header h1 { font-size: 24px; font-weight: 700; color: #222; letter-spacing: 1px; margin-bottom: 4px; }
-.header .sub { font-size: 12px; color: #aaa; }
+.header h1 { font-size: 22px; font-weight: 700; color: #D8479B; letter-spacing: 1px; }
 
 /* ===== Card ===== */
 .card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 24px 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  background: #fff; border-radius: 20px; padding: 24px 20px;
+  margin-bottom: 16px; box-shadow: 0 4px 20px rgba(180,140,200,0.12);
 }
-.card h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: #1a1a1a; }
+.card h2 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #333; }
 
-/* ===== Intro Page ===== */
-.intro-features { display: flex; gap: 12px; margin: 16px 0; flex-wrap: wrap; }
+/* ===== Intro ===== */
+.intro-features { display: flex; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
 .intro-feature {
-  flex: 1; min-width: 100px; text-align: center;
-  background: #f8f8f8; border-radius: 12px; padding: 16px 10px;
+  flex: 1; min-width: 80px; text-align: center;
+  background: #fdf6ff; border-radius: 14px; padding: 14px 8px;
 }
-.intro-feature .feat-icon { font-size: 22px; margin-bottom: 6px; }
-.intro-feature .feat-title { font-size: 11px; font-weight: 600; color: #555; margin-bottom: 2px; }
-.intro-feature .feat-desc { font-size: 10px; color: #999; }
+.intro-feature .feat-icon { font-size: 24px; margin-bottom: 4px; }
+.intro-feature .feat-title { font-size: 11px; font-weight: 600; color: #D8479B; margin-bottom: 2px; }
+.intro-feature .feat-desc { font-size: 10px; color: #aaa; }
 
 .guide-table { width: 100%; font-size: 11px; border-collapse: collapse; margin-bottom: 12px; }
-.guide-table td { padding: 8px 10px; border-bottom: 1px solid #f0f0f0; }
-.guide-table .g-num { font-weight: 700; width: 36px; text-align: center; }
-.guide-table tr:nth-child(1) .g-num { color: #2e7d32; }
-.guide-table tr:nth-child(2) .g-num { color: #4a90d9; }
-.guide-table tr:nth-child(3) .g-num { color: #f0ad4e; }
-.guide-table tr:nth-child(4) .g-num { color: #e8734a; }
-.guide-table tr:nth-child(5) .g-num { color: #c62828; }
+.guide-table td { padding: 6px 8px; border-bottom: 1px solid #f8e8ff; }
+.guide-table .g-num { font-weight: 700; width: 32px; text-align: center; font-size: 13px; }
+.guide-table tr:nth-child(1) .g-num { color: #D8479B; }
+.guide-table tr:nth-child(2) .g-num { color: #c23d8a; }
+.guide-table tr:nth-child(3) .g-num { color: #a83478; }
+.guide-table tr:nth-child(4) .g-num { color: #8c2a65; }
+.guide-table tr:nth-child(5) .g-num { color: #712052; }
 
 /* ===== Buttons ===== */
 .btn {
-  display: inline-block; padding: 12px 36px; border: none; border-radius: 12px;
+  display: inline-block; padding: 12px 36px; border: none; border-radius: 14px;
   font-size: 15px; font-weight: 600; cursor: pointer; outline: none;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); letter-spacing: 0.5px;
+  transition: all 0.25s; letter-spacing: 0.5px;
   -webkit-tap-highlight-color: transparent;
 }
 .btn-start {
-  background: #222; color: #fff; box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-  font-size: 16px; padding: 14px 48px; width: 100%; max-width: 300px;
+  background: #D8479B; color: #fff; box-shadow: 0 4px 16px rgba(216,71,155,0.3);
+  font-size: 16px; padding: 14px 48px; width: 100%; max-width: 280px;
 }
-.btn-start:hover { background: #3a3a3a; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
-.btn-start:active { transform: translateY(0); background: #000; }
+.btn-start:hover { background: #c23d8a; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(216,71,155,0.35); }
+.btn-start:active { transform: translateY(0); background: #a83478; }
 
 .btn-outline {
-  background: #fff; color: #555; border: 1.5px solid #ddd; font-size: 13px; padding: 10px 28px;
+  background: #fff; color: #888; border: 1.5px solid #e8d8f0; font-size: 13px; padding: 10px 28px; border-radius: 12px;
 }
-.btn-outline:hover { border-color: #aaa; color: #333; }
-.btn-outline:disabled { background: #f0f0f0; color: #ccc; border-color: #e0e0e0; cursor: not-allowed; }
-
-.btn-export {
-  background: #fff; color: #333; border: 1.5px solid #d5d5d5;
-  font-size: 13px; padding: 10px 28px; width: 100%;
-}
+.btn-outline:hover { border-color: #D8479B; color: #D8479B; }
+.btn-outline:disabled { background: #fafafa; color: #d0b8e0; border-color: #f0e0f8; cursor: not-allowed; }
 
 /* ===== Progress ===== */
 .progress-wrap { margin-bottom: 16px; }
-.progress-dots { display: flex; justify-content: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.progress-dots { display: flex; justify-content: center; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
 .progress-dot {
-  width: 8px; height: 8px; border-radius: 50%; background: #ddd;
+  width: 7px; height: 7px; border-radius: 50%; background: #e8d0f0;
   transition: all 0.3s;
 }
-.progress-dot.done { background: #4a90d9; }
-.progress-dot.current { background: #222; transform: scale(1.4); }
-.progress-counter { text-align: center; font-size: 12px; color: #999; font-weight: 500; }
+.progress-dot.done { background: #c97fbf; }
+.progress-dot.current { background: #D8479B; transform: scale(1.5); }
+.progress-counter { text-align: center; font-size: 11px; color: #b8a0c0; font-weight: 500; }
 
-/* ===== Quiz Page ===== */
-.quiz-card { padding: 32px 24px 28px; }
+/* ===== Quiz ===== */
+.quiz-card { padding: 28px 22px 24px; }
 .q-number {
-  display: inline-block; background: #222; color: #fff; font-size: 12px; font-weight: 700;
-  padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 0.5px;
+  display: inline-block; background: #D8479B; color: #fff; font-size: 12px; font-weight: 700;
+  padding: 4px 14px; border-radius: 20px; margin-bottom: 14px;
 }
-.q-text { font-size: 17px; font-weight: 600; color: #222; margin-bottom: 28px; line-height: 1.6; }
+.q-text { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 24px; line-height: 1.6; }
 
 .option-list { display: flex; flex-direction: column; gap: 10px; }
 .opt-item {
-  display: flex; align-items: center; gap: 12px;
-  padding: 14px 16px; border: 1.5px solid #e8e8e8; border-radius: 12px;
+  display: flex; align-items: center; gap: 10px;
+  padding: 13px 16px; border: 1.5px solid #e8d8f0; border-radius: 12px;
   background: #fff; cursor: pointer; transition: all 0.2s;
   -webkit-tap-highlight-color: transparent;
 }
-.opt-item:hover { border-color: #bbb; background: #fafafa; }
-.opt-item.selected { border-color: #222; background: #f9f9f9; box-shadow: 0 0 0 1px #222; }
-
+.opt-item:hover { border-color: #d4b8e8; background: #fdf6ff; }
+.opt-item.selected { border-color: #D8479B; background: #fef5fa; box-shadow: 0 0 0 1px #D8479B; }
 .opt-radio {
-  width: 20px; height: 20px; border-radius: 50%; border: 2px solid #ccc;
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-  transition: all 0.2s;
+  width: 20px; height: 20px; border-radius: 50%; border: 2px solid #d8c8e0;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s;
 }
-.opt-item.selected .opt-radio { border-color: #222; }
+.opt-item.selected .opt-radio { border-color: #D8479B; }
 .opt-item.selected .opt-radio::after {
-  content: ''; width: 10px; height: 10px; border-radius: 50%; background: #222;
+  content: ''; width: 10px; height: 10px; border-radius: 50%; background: #D8479B;
+}
+.opt-label { font-size: 13px; font-weight: 500; color: #666; }
+.opt-item.selected .opt-label { color: #D8479B; }
+
+.quiz-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; }
+
+/* ===== Result: Header ===== */
+.result-header { text-align: center; padding: 16px 0 4px; }
+.result-header .en-title { font-size: 20px; font-weight: 700; color: #D8479B; letter-spacing: 2px; margin-bottom: 2px; }
+.result-header .cn-title { font-size: 13px; color: #b090c0; }
+
+/* ===== Result: Radar Section ===== */
+.radar-section { text-align: center; }
+.radar-section .radar-wrap { display: flex; justify-content: center; padding: 8px 0; }
+.radar-section canvas { max-width: 100%; height: auto; }
+.radar-legend { display: flex; justify-content: center; gap: 24px; font-size: 11px; color: #999; margin-top: 4px; }
+.radar-legend span { display: flex; align-items: center; gap: 6px; }
+.radar-legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.radar-legend .dot.top { background: #ffc107; }
+.radar-legend .dot.normal { background: #fff; border: 1.5px solid #ccc; }
+
+/* ===== Result: Archetype Card ===== */
+.arch-card { text-align: center; padding: 20px 16px; }
+.arch-icon { font-size: 48px; margin-bottom: 10px; display: block; }
+.arch-title { 
+  font-size: 28px; font-weight: 800; margin-bottom: 2px;
+  background: linear-gradient(135deg, #D8479B, #9B59B6);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.arch-tag {
+  display: inline-block; background: #fff0f5; color: #D8479B;
+  padding: 4px 16px; border-radius: 20px; font-size: 11px; font-weight: 600; margin-bottom: 8px;
+}
+.arch-subtitle { font-size: 18px; font-weight: 600; color: #333; margin-bottom: 12px; }
+.arch-desc { font-size: 13px; color: #777; line-height: 1.8; text-align: left; padding: 0 8px; }
+.arch-desc .quote { color: #e8c8f0; font-size: 20px; }
+
+/* ===== Result: Bar Chart ===== */
+.bar-section {}
+.bar-section .bar-title { text-align: center; margin-bottom: 16px; }
+.bar-section .bar-title h2 { font-size: 16px; color: #D8479B; font-weight: 700; letter-spacing: 1px; }
+.bar-section .bar-title .sub { font-size: 11px; color: #b8a0c0; }
+
+.bar-item { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.bar-icon { font-size: 20px; width: 32px; text-align: center; flex-shrink: 0; }
+.bar-info { flex: 1; min-width: 0; }
+.bar-name-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.bar-name { font-size: 13px; font-weight: 600; color: #444; }
+.bar-score { font-size: 12px; color: #999; }
+.bar-rank {
+  font-size: 10px; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  background: #D8479B; color: #fff; margin-left: 6px;
+}
+.bar-bar { width: 100%; height: 8px; background: #f0e0f8; border-radius: 6px; overflow: hidden; }
+.bar-fill {
+  height: 100%; border-radius: 6px;
+  background: linear-gradient(90deg, #D8479B, #AECBEB);
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.opt-label { font-size: 14px; font-weight: 500; color: #555; }
-.opt-item.selected .opt-label { color: #222; }
-
-.quiz-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
-
-/* ===== Result Page ===== */
-.archetype-badge {
-  text-align: center; padding: 20px; background: #f8f8f8; border-radius: 14px; margin-bottom: 16px;
+/* ===== Footer ===== */
+.footer { text-align: center; padding: 20px 16px 24px; }
+.footer .restart { 
+  display: inline-block; background: #D8479B; color: #fff; padding: 12px 40px;
+  border-radius: 14px; font-size: 15px; font-weight: 600; cursor: pointer;
+  box-shadow: 0 4px 16px rgba(216,71,155,0.3); transition: all 0.25s;
+  -webkit-tap-highlight-color: transparent;
 }
-.archetype-badge .arch-icon { font-size: 48px; margin-bottom: 8px; }
-.archetype-badge .arch-name { font-size: 22px; font-weight: 700; color: #222; margin-bottom: 4px; }
-.archetype-badge .arch-en { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 2px; }
-
-.score-bar-row { margin-bottom: 10px; }
-.score-bar-label { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px; }
-.score-bar-label strong { color: #444; }
-.score-bar-label span { color: #999; }
-.score-bar { width: 100%; height: 8px; background: #eee; border-radius: 6px; overflow: hidden; }
-.score-bar-fill { height: 100%; border-radius: 6px; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
-
-.radar-wrap { display: flex; justify-content: center; align-items: center; padding: 8px 0; }
-.radar-wrap canvas { max-width: 100%; height: auto; display: block; }
-
-.analysis-text { font-size: 13px; color: #666; line-height: 1.8; }
-.analysis-text strong { color: #333; }
-.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.tag {
-  display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 600;
-  background: #f0f0f0; color: #666;
-}
-
-.footer { text-align: center; padding: 24px 16px; font-size: 11px; color: #bbb; border-top: 1px solid #e8e8e8; }
-.footer .tip { color: #999; font-size: 12px; margin-top: 6px; font-weight: 500; }
+.footer .restart:hover { background: #c23d8a; transform: translateY(-1px); }
+.footer .restart:active { background: #a83478; transform: translateY(0); }
+.footer .disclaimer { font-size: 11px; color: #c0a8d0; margin-top: 14px; }
 
 /* ===== Animation ===== */
-.fade-in { animation: fadeIn 0.4s ease-out; }
+.fade-in { animation: fadeIn 0.45s ease-out; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-
-/* ===== Responsive ===== */
-@media (max-width: 480px) {
-  .header h1 { font-size: 20px; }
-  .q-text { font-size: 15px; }
-  .opt-item { padding: 12px 14px; }
-  .opt-label { font-size: 13px; }
-}
 
 /* ===== Dark Mode ===== */
 @media (prefers-color-scheme: dark) {
-  body { background: #1a1a1a; color: #ccc; }
-  .card { background: #252525; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
-  .card h2 { color: #e0e0e0; }
-  .header { border-bottom-color: #333; }
-  .header h1 { color: #e0e0e0; }
-  .header .sub, .header p { color: #888; }
-  .q-text { color: #e0e0e0; }
-  .q-number { background: #4a90d9; }
-  .opt-item { background: #252525; border-color: #3a3a3a; }
-  .opt-item:hover { border-color: #555; background: #2a2a2a; }
-  .opt-item.selected { border-color: #4a90d9; background: #1e1e1e; box-shadow: 0 0 0 1px #4a90d9; }
-  .opt-radio { border-color: #555; }
-  .opt-item.selected .opt-radio { border-color: #4a90d9; }
-  .opt-item.selected .opt-radio::after { background: #4a90d9; }
-  .opt-label { color: #aaa; }
-  .opt-item.selected .opt-label { color: #4a90d9; }
-  .btn-start { background: #4a90d9; box-shadow: 0 3px 12px rgba(74,144,217,0.3); }
-  .btn-start:active { background: #3a80c9; }
-  .btn-outline { background: #2a2a2a; color: #ccc; border-color: #555; }
-  .btn-outline:hover { border-color: #888; background: #333; }
-  .btn-outline:disabled { background: #333; color: #555; border-color: #444; }
-  .progress-dot { background: #444; }
-  .progress-dot.done { background: #4a90d9; }
-  .progress-dot.current { background: #4a90d9; }
-  .progress-counter { color: #888; }
-  .archetype-badge { background: #2a2a2a; }
-  .archetype-badge .arch-name { color: #e0e0e0; }
-  .score-bar { background: #3a3a3a; }
-  .score-bar-label strong { color: #ccc; }
-  .intro-feature { background: #2a2a2a; }
-  .guide-table td { border-bottom-color: #333; }
-  .tag { background: #333; color: #aaa; }
-  .analysis-text { color: #aaa; }
-  .analysis-text strong { color: #ccc; }
-  .footer { border-top-color: #333; color: #666; }
-  .footer .tip { color: #888; }
+  body { background: #1a1025; color: #ccc; }
+  .card { background: #241830; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+  .card h2 { color: #e0c0e8; }
+  .header h1 { color: #e070b0; }
+  .q-text { color: #e0c8e8; }
+  .q-number { background: #c04a90; }
+  .opt-item { background: #241830; border-color: #3a2848; }
+  .opt-item:hover { border-color: #5a3a68; background: #2a1a38; }
+  .opt-item.selected { border-color: #e070b0; background: #2e1640; box-shadow: 0 0 0 1px #e070b0; }
+  .opt-radio { border-color: #5a3a68; }
+  .opt-item.selected .opt-radio { border-color: #e070b0; }
+  .opt-item.selected .opt-radio::after { background: #e070b0; }
+  .opt-label { color: #b8a0c8; }
+  .opt-item.selected .opt-label { color: #e070b0; }
+  .btn-outline { background: #241830; color: #b8a0c8; border-color: #3a2848; }
+  .btn-outline:hover { border-color: #e070b0; color: #e070b0; background: #2a1a38; }
+  .btn-outline:disabled { background: #1e1230; color: #5a3a68; border-color: #2a1a40; }
+  .progress-dot { background: #3a2848; }
+  .progress-dot.done { background: #a060c0; }
+  .progress-dot.current { background: #e070b0; }
+  .progress-counter { color: #9070a8; }
+  .intro-feature { background: #2a1a38; }
+  .intro-feature .feat-title { color: #e070b0; }
+  .guide-table td { border-bottom-color: #3a2848; }
+  .guide-table .g-num { color: #e070b0; }
+  .arch-tag { background: #3a1850; }
+  .arch-subtitle { color: #e0c8e8; }
+  .arch-desc { color: #b0a0c0; }
+  .arch-desc .quote { color: #5a3a68; }
+  .bar-name { color: #d0c0e0; }
+  .bar-bar { background: #3a2848; }
+  .result-header .en-title { color: #e070b0; }
+  .radar-legend { color: #9070a8; }
+  .footer .disclaimer { color: #6a5080; }
+  .bar-section .bar-title h2 { color: #e070b0; }
 }
 </style>
 </head>
@@ -216,28 +229,15 @@ body {
 <!-- 首页 -->
 <div id="page-intro">
   <div class="header">
-    <div class="icon">&#9733;</div>
     <h1>天赋原型测试</h1>
-    <p class="sub">基于多元智能理论 | 10维度深度分析 | 约5分钟</p>
+    <p style="font-size:12px;color:#b8a0c0;margin-top:4px;">基于加德纳多元智能理论 · 10维度分析</p>
   </div>
 
   <div class="card">
     <div class="intro-features">
-      <div class="intro-feature">
-        <div class="feat-icon">&#128200;</div>
-        <div class="feat-title">10个维度</div>
-        <div class="feat-desc">全面评估</div>
-      </div>
-      <div class="intro-feature">
-        <div class="feat-icon">&#9889;</div>
-        <div class="feat-title">40道题目</div>
-        <div class="feat-desc">约5分钟</div>
-      </div>
-      <div class="intro-feature">
-        <div class="feat-icon">&#127919;</div>
-        <div class="feat-title">原型匹配</div>
-        <div class="feat-desc">精准定位</div>
-      </div>
+      <div class="intro-feature"><div class="feat-icon">📊</div><div class="feat-title">10个维度</div><div class="feat-desc">全面评估</div></div>
+      <div class="intro-feature"><div class="feat-icon">⚡</div><div class="feat-title">40道题</div><div class="feat-desc">约5分钟</div></div>
+      <div class="intro-feature"><div class="feat-icon">🎯</div><div class="feat-title">原型匹配</div><div class="feat-desc">精准定位</div></div>
     </div>
   </div>
 
@@ -250,14 +250,14 @@ body {
       <tr><td class="g-num">2</td><td style="color:#666;">不太符合 — 偶尔如此</td></tr>
       <tr><td class="g-num">1</td><td style="color:#666;">完全不符合 — 几乎不描述你</td></tr>
     </table>
-    <p style="font-size:10px; color:#bbb; text-align:center;">凭第一直觉作答，没有对错之分</p>
+    <p style="font-size:10px;color:#c8b0d8;text-align:center;">凭第一直觉作答，没有对错之分</p>
     <div style="text-align:center; margin-top:16px;">
       <button class="btn btn-start" onclick="startTest()">开始测试</button>
     </div>
   </div>
 
-  <div class="footer" style="border-top:none;">
-    <p>基于加德纳多元智能理论 &amp; 积极心理学</p>
+  <div class="footer" style="border-top:none;padding-top:0;">
+    <p class="disclaimer">结果仅供参考，不构成专业心理评估</p>
   </div>
 </div>
 
@@ -270,7 +270,7 @@ body {
   <div id="quiz-card" class="card quiz-card"></div>
   <div class="quiz-nav">
     <button class="btn btn-outline" id="btn-prev" onclick="prevQ()" style="visibility:hidden;">上一题</button>
-    <span id="quiz-status" style="font-size:12px;color:#aaa;"></span>
+    <span style="font-size:11px;color:#c0a8d0;"></span>
     <button class="btn btn-outline" id="btn-next" onclick="nextQ()">下一题</button>
   </div>
 </div>
@@ -283,62 +283,82 @@ body {
 </div>
 
 <script>
-// ===== 题目定义 =====
+// ===== 题目 =====
 var questions = [
-  // 表达力 1-4
-  {id:1,  f:"表达力", t:"我喜欢用文字或语言来表达自己的想法和感受"},
-  {id:2,  f:"表达力", t:"我在公众场合发言时感到自如和有感染力"},
-  {id:3,  f:"表达力", t:"写文章或讲故事对我来说是件轻松的事"},
-  {id:4,  f:"表达力", t:"我善于用比喻和生动的语言让别人理解复杂概念"},
-  // 分析力 5-8
-  {id:5,  f:"分析力", t:"我喜欢拆解复杂问题，找到其中的逻辑和规律"},
-  {id:6,  f:"分析力", t:"我对数字、数据和图表有天生的敏感度"},
-  {id:7,  f:"分析力", t:"做逻辑推理或解谜题让我感到兴奋"},
-  {id:8,  f:"分析力", t:"我习惯用理性分析来做决策，而非仅凭感觉"},
-  // 想象力 9-12
-  {id:9,  f:"想象力", t:"我常常在脑海中构建出清晰的画面或场景"},
-  {id:10, f:"想象力", t:"我对空间布局、方向和视觉设计有天然的直觉"},
-  {id:11, f:"想象力", t:"我有丰富的内心世界，喜欢幻想和创造新的可能"},
-  {id:12, f:"想象力", t:"看到抽象概念时，我能自然地将其转化为视觉图像"},
-  // 自察力 13-16
-  {id:13, f:"自察力", t:"我清楚自己的优势和不足，对自己有清晰的认识"},
-  {id:14, f:"自察力", t:"我经常反思自己的行为和决定"},
-  {id:15, f:"自察力", t:"我有明确的人生方向和价值观"},
-  {id:16, f:"自察力", t:"面对挫折时，我能较快调整心态并从中学习"},
-  // 共情力 17-20
-  {id:17, f:"共情力", t:"我能轻易感知到身边人的情绪变化"},
-  {id:18, f:"共情力", t:"朋友遇到困难时，常常第一个想到找我倾诉"},
-  {id:19, f:"共情力", t:"我善于站在他人角度思考问题"},
-  {id:20, f:"共情力", t:"在团队中，我经常充当沟通和协调的角色"},
-  // 协调力 21-24
-  {id:21, f:"协调力", t:"我擅长至少一项体育运动或身体技能"},
-  {id:22, f:"协调力", t:"我的动手能力很强，喜欢制作或修理东西"},
-  {id:23, f:"协调力", t:"学习新动作或舞蹈时，我掌握得比大多数人快"},
-  {id:24, f:"协调力", t:"我能很好地同时处理多个任务，保持有序"},
-  // 律动力 25-28
-  {id:25, f:"律动力", t:"我对音乐节奏和旋律非常敏感"},
-  {id:26, f:"律动力", t:"我的身体有自然的节奏感，会不自觉地跟随节拍"},
-  {id:27, f:"律动力", t:"音乐能深刻地影响我的情绪状态"},
-  {id:28, f:"律动力", t:"我会演奏乐器，或对学习乐器有强烈兴趣"},
-  // 观察力 29-32
-  {id:29, f:"观察力", t:"我善于注意到别人容易忽略的细节"},
-  {id:30, f:"观察力", t:"我对自然界的变化（天气、季节、动植物）很敏感"},
-  {id:31, f:"观察力", t:"我能快速发现环境中的异常或变化"},
-  {id:32, f:"观察力", t:"我喜欢观察和分析身边的人和事"},
-  // 原创力 33-36
-  {id:33, f:"原创力", t:"我常常冒出新颖独特的想法和创意"},
-  {id:34, f:"原创力", t:"我不喜欢循规蹈矩，倾向于用自己的方式解决问题"},
-  {id:35, f:"原创力", t:"我享受从零创造东西的过程"},
-  {id:36, f:"原创力", t:"别人常评价我'想法很特别'或'有创意'"},
-  // 审美力 37-40
-  {id:37, f:"审美力", t:"我对色彩搭配和视觉美感有敏锐的直觉"},
-  {id:38, f:"审美力", t:"我会花心思让生活环境和工作空间变得美观"},
-  {id:39, f:"审美力", t:"看到设计精美的物品或画面，我会感到由衷的愉悦"},
-  {id:40, f:"审美力", t:"我经常关注时尚、设计或艺术领域的动态"}
+  {id:1,f:"表达力",t:"我喜欢用文字或语言来表达自己的想法和感受"},
+  {id:2,f:"表达力",t:"我在公众场合发言时感到自如和有感染力"},
+  {id:3,f:"表达力",t:"写文章或讲故事对我来说是件轻松的事"},
+  {id:4,f:"表达力",t:"我善于用比喻和生动的语言让别人理解复杂概念"},
+  {id:5,f:"分析力",t:"我喜欢拆解复杂问题，找到其中的逻辑和规律"},
+  {id:6,f:"分析力",t:"我对数字、数据和图表有天生的敏感度"},
+  {id:7,f:"分析力",t:"做逻辑推理或解谜题让我感到兴奋"},
+  {id:8,f:"分析力",t:"我习惯用理性分析来做决策，而非仅凭感觉"},
+  {id:9,f:"想象力",t:"我常常在脑海中构建出清晰的画面或场景"},
+  {id:10,f:"想象力",t:"我对空间布局、方向和视觉设计有天然的直觉"},
+  {id:11,f:"想象力",t:"我有丰富的内心世界，喜欢幻想和创造新的可能"},
+  {id:12,f:"想象力",t:"看到抽象概念时，我能自然地将其转化为视觉图像"},
+  {id:13,f:"自察力",t:"我清楚自己的优势和不足，对自己有清晰的认识"},
+  {id:14,f:"自察力",t:"我经常反思自己的行为和决定"},
+  {id:15,f:"自察力",t:"我有明确的人生方向和价值观"},
+  {id:16,f:"自察力",t:"面对挫折时，我能较快调整心态并从中学习"},
+  {id:17,f:"共情力",t:"我能轻易感知到身边人的情绪变化"},
+  {id:18,f:"共情力",t:"朋友遇到困难时，常常第一个想到找我倾诉"},
+  {id:19,f:"共情力",t:"我善于站在他人角度思考问题"},
+  {id:20,f:"共情力",t:"在团队中，我经常充当沟通和协调的角色"},
+  {id:21,f:"协调力",t:"我擅长至少一项体育运动或身体技能"},
+  {id:22,f:"协调力",t:"我的动手能力很强，喜欢制作或修理东西"},
+  {id:23,f:"协调力",t:"学习新动作或舞蹈时，我掌握得比大多数人快"},
+  {id:24,f:"协调力",t:"我能很好地同时处理多个任务，保持有序"},
+  {id:25,f:"律动力",t:"我对音乐节奏和旋律非常敏感"},
+  {id:26,f:"律动力",t:"我的身体有自然的节奏感，会不自觉地跟随节拍"},
+  {id:27,f:"律动力",t:"音乐能深刻地影响我的情绪状态"},
+  {id:28,f:"律动力",t:"我会演奏乐器，或对学习乐器有强烈兴趣"},
+  {id:29,f:"观察力",t:"我善于注意到别人容易忽略的细节"},
+  {id:30,f:"观察力",t:"我对自然界的变化很敏感"},
+  {id:31,f:"观察力",t:"我能快速发现环境中的异常或变化"},
+  {id:32,f:"观察力",t:"我喜欢观察和分析身边的人和事"},
+  {id:33,f:"原创力",t:"我常常冒出新颖独特的想法和创意"},
+  {id:34,f:"原创力",t:"我不喜欢循规蹈矩，倾向于用自己的方式解决问题"},
+  {id:35,f:"原创力",t:"我享受从零创造东西的过程"},
+  {id:36,f:"原创力",t:"别人常评价我'想法很特别'或'有创意'"},
+  {id:37,f:"审美力",t:"我对色彩搭配和视觉美感有敏锐的直觉"},
+  {id:38,f:"审美力",t:"我会花心思让生活环境和工作空间变得美观"},
+  {id:39,f:"审美力",t:"看到设计精美的物品或画面，我会感到由衷的愉悦"},
+  {id:40,f:"审美力",t:"我经常关注时尚、设计或艺术领域的动态"}
 ];
 
 var dims = ["表达力","分析力","想象力","自察力","共情力","协调力","律动力","观察力","原创力","审美力"];
-var dimColors = ["#4a90d9","#e8734a","#8e44ad","#2ecc71","#f39c12","#e74c3c","#1abc9c","#3498db","#9b59b6","#e67e22"];
+var dimIcons = { "表达力":"💬","分析力":"🧮","想象力":"🎨","自察力":"🪞","共情力":"💝","协调力":"🤸","律动力":"🎵","观察力":"🔍","原创力":"💡","审美力":"🌸" };
+var dimColors = [ "#D8479B","#C23D8A","#B53580","#A02E72","#8C2864","#7A2256","#681D4A","#D8479B","#C23D8A","#B53580" ];
+
+var archIcons = { "表达力":"💬","分析力":"🧮","想象力":"🎨","自察力":"🪞","共情力":"💝","协调力":"🤸","律动力":"🎵","观察力":"🔍","原创力":"💡","审美力":"🌸" };
+var archTitles = { "表达力":"言语编织者","分析力":"逻辑解构师","想象力":"视觉造梦者","自察力":"内观哲人","共情力":"心灵捕手","协调力":"身体掌控者","律动力":"节奏共鸣者","观察力":"细节猎手","原创力":"灵感造物主","审美力":"氛围缔造师" };
+var archTags = { "表达力":"表达力天赋","分析力":"分析力天赋","想象力":"想象力天赋","自察力":"自察力天赋","共情力":"共情力天赋","协调力":"协调力天赋","律动力":"律动力天赋","观察力":"观察力天赋","原创力":"原创力天赋","审美力":"审美力天赋" };
+var archSubs = { "表达力":"天生的沟通艺术家","分析力":"冷静的理性思考者","想象力":"在幻想与现实间穿梭","自察力":"自己内心的主宰者","共情力":"温暖的人际纽带","协调力":"用身体对话世界","律动力":"与节拍共舞的灵魂","观察力":"世界的敏锐观察者","原创力":"永不枯竭的创意源泉","审美力":"浪漫的理想主义者" };
+var archDescs = {
+  "表达力":"你天生善于用语言和文字连接人心。无论是演讲还是写作，你总能找到最打动人的表达方式，把复杂的情感和思想化成别人能听懂的语言。",
+  "分析力":"你的大脑是一台精密的分析引擎。面对混乱的信息，你能快速抽丝剥茧，找到核心逻辑和最优解。在数据和规则的世界里，你如鱼得水。",
+  "想象力":"你的脑海中有一个比现实更丰富的世界。你擅长将抽象化为具象，把不可能变成可能。每一个画面都能在你心中激起无限灵感。",
+  "自察力":"你是自己内心世界的主人。清晰的自我认知让你在人生岔路口总能做出忠于自己的选择，不随波逐流，活得清醒而坚定。",
+  "共情力":"你像一面情感的镜子，能精准映照他人的内心。人们在你身边感到被真正理解和接纳，这是你最珍贵的能力。",
+  "协调力":"你的身体就是最强大的工具。无论是运动场上的爆发力还是手工操作的精准度，你都游刃有余，用行动而不是言语来证明自己。",
+  "律动力":"节奏和旋律是你的第二语言。音乐不仅是你的爱好，更是你感知和影响世界的独特方式。你用韵律来表达无需言说的情感。",
+  "观察力":"你有一双鹰一般的眼睛。细节逃不过你的注视，模式逃不过你的感知，世界在你眼中更加清晰，你能看到别人看不到的真相。",
+  "原创力":"你天生不满足于复制，创造才是你的本能。当你把脑海中的新点子变成现实时，世界因此变得不同。你的灵感像泉水一样涌动。",
+  "审美力":"美是你的信仰。你对色彩、形态和氛围的敏感让你能从平凡中提炼出令人惊叹的美感。在别人眼中普通的事物，在你眼里都是灵感。"
+};
+var archCareers = {
+  "表达力":"作家、记者、演说家、教师、律师、内容创作者",
+  "分析力":"程序员、数据科学家、金融分析师、工程师、策略顾问",
+  "想象力":"设计师、建筑师、导演、游戏策划、插画师、产品经理",
+  "自察力":"心理咨询师、作家、人生教练、独立研究者",
+  "共情力":"心理咨询师、HR、社工、销售、护士、管理者",
+  "协调力":"运动员、外科医生、舞蹈演员、手工艺人、厨师",
+  "律动力":"音乐人、作曲家、DJ、音响工程师、配音演员",
+  "观察力":"科学家、侦探、摄影师、医生、自然学家",
+  "原创力":"创业者、发明家、艺术家、导演、广告创意",
+  "审美力":"时尚设计师、室内设计师、摄影师、花艺师、美妆博主"
+};
 
 var TOTAL = 40;
 var currentIdx = 0;
@@ -350,11 +370,12 @@ function startTest() {
   document.getElementById("page-result").style.display = "none";
   document.getElementById("page-quiz").style.display = "block";
   buildDots(); renderQ(0);
+  window.scrollTo(0,0);
 }
 
 function buildDots() {
   var h = '';
-  for (var i=0;i<TOTAL;i++) { h += '<div id="dot'+i+'" class="progress-dot"></div>'; }
+  for (var i=0;i<TOTAL;i++) h += '<div id="dot'+i+'" class="progress-dot"></div>';
   document.getElementById("progress-dots").innerHTML = h;
 }
 
@@ -362,8 +383,7 @@ function renderQ(idx) {
   currentIdx = idx;
   var q = questions[idx];
   var val = answers[q.id] || 0;
-
-  var h = '';
+  var h = '<div class="fade-in">';
   h += '<div class="q-number">' + q.id + ' / 40</div>';
   h += '<div class="q-text">' + q.t + '</div>';
   h += '<div class="option-list">';
@@ -372,17 +392,13 @@ function renderQ(idx) {
     var sel = (val===v) ? ' selected' : '';
     h += '<div class="opt-item' + sel + '" onclick="selectOpt(' + q.id + ',' + v + ',this)">';
     h += '<div class="opt-radio"></div>';
-    h += '<div class="opt-label">' + opts[5-v] + '</div>';
-    h += '</div>';
+    h += '<div class="opt-label">' + opts[5-v] + '</div></div>';
   }
-  h += '</div>';
-  document.getElementById("quiz-card").innerHTML = '<div class="fade-in">' + h + '</div>';
+  h += '</div></div>';
+  document.getElementById("quiz-card").innerHTML = h;
 
-  // 进度
   var answered = Object.keys(answers).length;
   document.getElementById("progress-counter").textContent = (idx+1) + ' / ' + TOTAL + '（已答 ' + answered + ' 题）';
-
-  // 圆点
   for (var i=0;i<TOTAL;i++) {
     var dot = document.getElementById("dot"+i);
     if (!dot) continue;
@@ -390,173 +406,143 @@ function renderQ(idx) {
     if (i<idx) dot.className += " done";
     if (i===idx) dot.className += " current";
   }
-
-  // 导航按钮
-  var btnPrev = document.getElementById("btn-prev");
-  var btnNext = document.getElementById("btn-next");
-  btnPrev.style.visibility = (idx===0) ? "hidden" : "visible";
-  btnNext.textContent = (idx===TOTAL-1) ? "查看结果" : "下一题";
+  var btnP = document.getElementById("btn-prev");
+  btnP.style.visibility = (idx===0) ? "hidden" : "visible";
+  document.getElementById("btn-next").textContent = (idx===TOTAL-1) ? "查看结果" : "下一题";
 }
 
 function selectOpt(qid, val, el) {
   answers[qid] = val;
   var items = el.parentNode.querySelectorAll(".opt-item");
-  for (var i=0;i<items.length;i++) { items[i].className = "opt-item"; }
+  for (var i=0;i<items.length;i++) items[i].className = "opt-item";
   el.className = "opt-item selected";
-  // 自动跳下一题
-  setTimeout(function() {
-    if (currentIdx < TOTAL-1) { renderQ(currentIdx+1); }
-  }, 250);
+  setTimeout(function(){ if (currentIdx < TOTAL-1) renderQ(currentIdx+1); }, 250);
 }
 
-function nextQ() {
-  if (currentIdx < TOTAL-1) { renderQ(currentIdx+1); }
-  else { submitTest(); }
-}
+function nextQ() { if (currentIdx < TOTAL-1) renderQ(currentIdx+1); else submitTest(); }
 function prevQ() { if (currentIdx>0) renderQ(currentIdx-1); }
-
-// ===== 天赋原型定义 =====
-var archetypes = {
-  "表达力":   {icon:"&#9997;", en:"The Communicator",   desc:"你天生善于用语言和文字连接人心。无论是演讲还是写作，你总能找到最打动人的表达方式。", careers:"作家、记者、演说家、教师、律师、内容创作者、公关"},
-  "分析力":   {icon:"&#128300;", en:"The Analyst",      desc:"你的大脑是一台精密的分析引擎。面对混乱的信息，你能快速抽丝剥茧，找到核心逻辑和最优解。", careers:"程序员、数据科学家、金融分析师、工程师、策略顾问、研究员"},
-  "想象力":   {icon:"&#127912;", en:"The Visionary",     desc:"你的脑海中有一个比现实更丰富的世界。你擅长将抽象化为具象，把不可能变成可能。", careers:"设计师、建筑师、导演、游戏策划、插画师、产品经理"},
-  "自察力":   {icon:"&#128214;", en:"The Philosopher",   desc:"你是自己内心世界的主人。清晰的自我认知让你在人生岔路口总能做出忠于自己的选择。", careers:"心理咨询师、作家、哲学家、人生教练、独立研究者"},
-  "共情力":   {icon:"&#129309;", en:"The Empath",        desc:"你像一面情感的镜子，能精准映照他人的内心。人们在你身边感到被真正理解和接纳。", careers:"心理咨询师、HR、社工、销售、护士、教师、管理者"},
-  "协调力":   {icon:"&#127939;", en:"The Mover",         desc:"你的身体就是最强大的工具。无论是运动场上的爆发力还是手工操作的精准度，你都游刃有余。", careers:"运动员、外科医生、舞蹈演员、手工艺人、厨师、机械师"},
-  "律动力":   {icon:"&#127926;", en:"The Resonator",     desc:"节奏和旋律是你的第二语言。音乐不仅是你的爱好，更是你感知和影响世界的独特方式。", careers:"音乐人、作曲家、DJ、音响工程师、音乐治疗师、配音演员"},
-  "观察力":   {icon:"&#128269;", en:"The Observer",      desc:"你有一双鹰一般的眼睛。细节逃不过你的注视，模式逃不过你的感知，世界在你眼中更加清晰。", careers:"科学家、侦探、质检员、摄影师、医生、自然学家、收藏家"},
-  "原创力":   {icon:"&#128161;", en:"The Creator",       desc:"你天生不满足于复制，创造才是你的本能。当你把脑海中的新点子变成现实时，世界因此变得不同。", careers:"创业者、发明家、艺术家、导演、产品设计师、广告创意"},
-  "审美力":   {icon:"&#127802;", en:"The Aesthete",      desc:"美是你的信仰。你对色彩、形态和氛围的敏感让你能从平凡中提炼出令人惊叹的美感。", careers:"时尚设计师、室内设计师、摄影师、花艺师、美妆博主、艺术策展人"}
-};
 
 function submitTest() {
   var scores = [];
-  for (var i=0;i<TOTAL;i++) { scores.push(answers[questions[i].id] || 3); }
+  for (var i=0;i<TOTAL;i++) scores.push(answers[questions[i].id] || 3);
 
-  // 计算维度得分
   var dimScores = {};
   for (var d=0;d<dims.length;d++) {
     var dn = dims[d]; var sum=0, count=0;
-    for (var i=0;i<TOTAL;i++) { if (questions[i].f===dn) { sum+=scores[i]; count++; } }
-    dimScores[dn] = {sum:sum, count:count, avg:(sum/count).toFixed(2)};
+    for (var i=0;i<TOTAL;i++) if (questions[i].f===dn) { sum+=scores[i]; count++; }
+    dimScores[dn] = {sum:sum, count:count, avg:parseFloat((sum/count).toFixed(2))};
   }
 
-  // 找前3
   var sorted = [];
-  for (var d=0;d<dims.length;d++) { sorted.push({name:dims[d], avg:parseFloat(dimScores[dims[d]].avg)}); }
+  for (var d=0;d<dims.length;d++) sorted.push({name:dims[d], avg:dimScores[dims[d]].avg});
   sorted.sort(function(a,b){return b.avg-a.avg;});
-  var top1 = sorted[0].name;
-  var top2 = sorted[1].name;
-  var top3 = sorted[2].name;
-  var arch = archetypes[top1];
+  var top1=sorted[0].name, top2=sorted[1].name, top3=sorted[2].name;
 
-  // 构建结果
   var h = '';
 
-  // 头部
-  h += '<div class="header" style="padding-bottom:12px;"><h1>你的天赋原型</h1></div>';
+  // ===== Section 1: Radar =====
+  h += '<div class="radar-section fade-in"><div class="card">';
+  h += '<div class="result-header"><div class="en-title">THE TALENT MAP</div>';
+  h += '<div class="cn-title">— 天赋分布图谱 —</div></div>';
+  h += '<div class="radar-wrap"><canvas id="radar-canvas" width="460" height="460"></canvas></div>';
+  h += '<div class="radar-legend"><span><span class="dot top"></span>核心天赋 Top3</span><span><span class="dot normal"></span>其他天赋</span></div>';
+  h += '</div></div>';
 
-  // 原型卡片
-  h += '<div class="card"><div class="archetype-badge">';
-  h += '<div class="arch-icon">' + arch.icon + '</div>';
-  h += '<div class="arch-name">' + top1 + ' 型</div>';
-  h += '<div class="arch-en">' + arch.en + '</div>';
-  h += '<div style="margin-top:10px;font-size:13px;color:#666;">' + arch.desc + '</div>';
-  h += '<div class="tag-list" style="justify-content:center;margin-top:10px;">';
-  h += '<span class="tag" style="background:#222;color:#fff;">#1 ' + top1 + '</span>';
-  h += '<span class="tag">#2 ' + top2 + '</span>';
-  h += '<span class="tag">#3 ' + top3 + '</span>';
-  h += '</div></div></div>';
+  // ===== Section 2: Archetype =====
+  h += '<div class="arch-card card fade-in">';
+  h += '<div style="text-align:center;"><span class="arch-icon">' + archIcons[top1] + '</span></div>';
+  h += '<div class="arch-tag">' + archTags[top1] + '</div>';
+  h += '<div class="arch-title">' + archTitles[top1] + '</div>';
+  h += '<div class="arch-subtitle">' + archSubs[top1] + '</div>';
+  h += '<div class="arch-desc">';
+  h += '<span class="quote">&ldquo;</span> ' + archDescs[top1] + ' <span class="quote">&rdquo;</span>';
+  h += '</div>';
+  h += '<div class="arch-desc" style="margin-top:12px;font-size:11px;color:#b090c0;">';
+  h += '🧭 适合领域：' + archCareers[top1] + '</div>';
+  h += '</div>';
 
-  // 能力柱状图
-  h += '<div class="card"><h2>十维能力分布</h2>';
-  for (var d=0;d<dims.length;d++) {
-    var dn = dims[d]; var ds = dimScores[dn]; var pct = Math.round(parseFloat(ds.avg)/5*100);
-    h += '<div class="score-bar-row">';
-    h += '<div class="score-bar-label"><strong>' + dn + '</strong><span>' + ds.avg + ' / 5</span></div>';
-    h += '<div class="score-bar"><div class="score-bar-fill" style="width:' + pct + '%;background:' + dimColors[d] + ';"></div></div>';
-    h += '</div>';
+  // ===== Section 3: Bar Chart =====
+  h += '<div class="bar-section card fade-in">';
+  h += '<div class="bar-title"><h2>DIMENSION ANALYSIS</h2><div class="sub">— 全维度分析 —</div></div>';
+  var topSet = {};
+  for (var i=0;i<3;i++) topSet[sorted[i].name] = i+1;
+  for (var d=0;d<sorted.length;d++) {
+    var dn = sorted[d].name;
+    var ds = dimScores[dn];
+    var pct = Math.round(ds.avg/5*100);
+    var rank = topSet[dn];
+    h += '<div class="bar-item">';
+    h += '<div class="bar-icon">' + dimIcons[dn] + '</div>';
+    h += '<div class="bar-info">';
+    h += '<div class="bar-name-row"><span class="bar-name">' + dn;
+    if (rank) h += '<span class="bar-rank">Top ' + rank + '</span>';
+    h += '</span><span class="bar-score">' + ds.avg + ' / 5</span></div>';
+    h += '<div class="bar-bar"><div class="bar-fill" style="width:' + pct + '%;"></div></div>';
+    h += '</div></div>';
   }
   h += '</div>';
 
-  // 雷达图
-  h += '<div class="card"><h2>天赋雷达图</h2><div class="radar-wrap"><canvas id="radar-canvas" width="500" height="500"></canvas></div></div>';
-
-  // 详细解读
-  h += '<div class="card"><h2>天赋解读</h2>';
-  h += '<div class="analysis-text">';
-  h += '<p><strong>&#127942; 核心天赋：' + top1 + '</strong></p><p>' + arch.desc + '</p>';
-  h += '<p style="margin-top:10px;"><strong>&#128188; 适合领域：</strong>' + arch.careers + '</p>';
-  h += '<p style="margin-top:10px;"><strong>&#129518; 辅助天赋：</strong>' + top2 + ' &amp; ' + top3 + '</p>';
-  h += '<p style="margin-top:4px;color:#999;">这两种天赋可以作为你的重要补充，在工作和生活中发挥协同作用。</p>';
-  h += '</div></div>';
-
-  // 按钮区
-  h += '<div style="text-align:center;margin-bottom:20px;display:flex;flex-direction:column;gap:10px;align-items:center;">';
-  h += '<button class="btn btn-start" onclick="startTest()">重新测试</button>';
-  // 导出已移除
-  h += '</div>';
-
-  h += '<div class="footer"><p>基于加德纳多元智能理论 &amp; 积极心理学 | 结果仅供参考</p></div>';
+  // Restart
+  h += '<div class="footer"><span class="restart" onclick="startTest()">重新测试</span>';
+  h += '<p class="disclaimer">基于加德纳多元智能理论 · 结果仅供参考</p></div>';
 
   document.getElementById("page-quiz").style.display = "none";
   document.getElementById("result-content").innerHTML = h;
   document.getElementById("page-result").style.display = "block";
   window.scrollTo(0,0);
-  setTimeout(function(){drawRadar(dimScores);},100);
+  setTimeout(function(){drawRadar(dimScores, topSet);}, 150);
 }
 
-function drawRadar(dimScores) {
+function drawRadar(dimScores, topSet) {
   var canvas = document.getElementById("radar-canvas");
   if (!canvas) return;
   var ctx = canvas.getContext("2d");
   var n = dims.length;
-  var cx=250, cy=250, r=200, levels=5;
+  var cx=230, cy=230, r=190, levels=5;
 
   var isDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  var gc = isDark ? "#555" : "#bbb";
-  var ac = isDark ? "#444" : "#ddd";
-  var lc = isDark ? "#ccc" : "#444";
-  var fc = isDark ? "rgba(74,144,217,0.2)" : "rgba(80,80,80,0.1)";
-  var lnc = isDark ? "#4a90d9" : "#444";
-  var dc = isDark ? "#4a90d9" : "#222";
+  var gc = isDark ? "#4a3858" : "#e8d8f0";
+  var lc = isDark ? "#c0a8d0" : "#555";
+  var fc = isDark ? "rgba(216,71,155,0.15)" : "rgba(255,182,193,0.3)";
+  var lnc = "#D8479B";
+  var dc = isDark ? "#e070b0" : "#D8479B";
+  var tdc = "#FFC107";
 
-  ctx.clearRect(0,0,500,500);
+  ctx.clearRect(0,0,460,460);
 
   for (var lv=1;lv<=levels;lv++) {
     var lr = r*lv/levels; ctx.beginPath();
     for (var i=0;i<n;i++) {
       var a = Math.PI*2*i/n - Math.PI/2;
-      if (i===0) ctx.moveTo(cx+lr*Math.cos(a), cy+lr*Math.sin(a));
-      else ctx.lineTo(cx+lr*Math.cos(a), cy+lr*Math.sin(a));
+      if(i===0)ctx.moveTo(cx+lr*Math.cos(a),cy+lr*Math.sin(a));
+      else ctx.lineTo(cx+lr*Math.cos(a),cy+lr*Math.sin(a));
     }
     ctx.closePath(); ctx.strokeStyle=gc; ctx.lineWidth=0.8; ctx.stroke();
   }
 
   for (var i=0;i<n;i++) {
     var a = Math.PI*2*i/n - Math.PI/2;
-    ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(cx+r*Math.cos(a), cy+r*Math.sin(a));
-    ctx.strokeStyle=ac; ctx.lineWidth=0.6; ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(cx+r*Math.cos(a),cy+r*Math.sin(a));
+    ctx.strokeStyle=gc; ctx.lineWidth=0.6; ctx.stroke();
   }
 
-  ctx.fillStyle=lc;
-  ctx.font='12px "PingFang SC","Microsoft YaHei",sans-serif';
+  ctx.fillStyle=lc; ctx.font='11px "PingFang SC","Microsoft YaHei",sans-serif';
   ctx.textAlign="center"; ctx.textBaseline="middle";
-  var ld = r+30;
+  var ld = r+24;
   for (var i=0;i<n;i++) {
     var a = Math.PI*2*i/n - Math.PI/2;
     ctx.fillText(dims[i], cx+ld*Math.cos(a), cy+ld*Math.sin(a));
   }
 
   var dvs = [];
-  for (var i=0;i<n;i++) { dvs.push(parseFloat(dimScores[dims[i]].avg)); }
+  for (var i=0;i<n;i++) dvs.push(dimScores[dims[i]].avg);
 
   ctx.beginPath();
   for (var i=0;i<n;i++) {
     var dr = r*dvs[i]/5;
     var a = Math.PI*2*i/n - Math.PI/2;
-    if (i===0) ctx.moveTo(cx+dr*Math.cos(a), cy+dr*Math.sin(a));
-    else ctx.lineTo(cx+dr*Math.cos(a), cy+dr*Math.sin(a));
+    if(i===0)ctx.moveTo(cx+dr*Math.cos(a),cy+dr*Math.sin(a));
+    else ctx.lineTo(cx+dr*Math.cos(a),cy+dr*Math.sin(a));
   }
   ctx.closePath(); ctx.fillStyle=fc; ctx.fill();
   ctx.strokeStyle=lnc; ctx.lineWidth=2; ctx.stroke();
@@ -564,12 +550,16 @@ function drawRadar(dimScores) {
   for (var i=0;i<n;i++) {
     var dr = r*dvs[i]/5;
     var a = Math.PI*2*i/n - Math.PI/2;
-    ctx.beginPath(); ctx.arc(cx+dr*Math.cos(a),cy+dr*Math.sin(a),4,0,Math.PI*2);
-    ctx.fillStyle=dc; ctx.fill();
+    var isTop = topSet[dims[i]];
+    ctx.beginPath();
+    ctx.arc(cx+dr*Math.cos(a),cy+dr*Math.sin(a), isTop ? 6 : 3.5, 0, Math.PI*2);
+    ctx.fillStyle = isTop ? tdc : "#fff";
+    ctx.fill();
+    ctx.strokeStyle = isTop ? "#e0a800" : "#d0b8e0";
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
   }
 }
-
-// 导出已移除
 </script>
 
 </body>
