@@ -494,7 +494,7 @@ function submitTest() {
   // 按钮区
   h += '<div style="text-align:center;margin-bottom:20px;display:flex;flex-direction:column;gap:10px;align-items:center;">';
   h += '<button class="btn btn-start" onclick="startTest()">重新测试</button>';
-  h += '<button class="btn btn-export" onclick="exportImage()">保存结果图片</button>';
+  // 导出已移除
   h += '</div>';
 
   h += '<div class="footer"><p>基于加德纳多元智能理论 &amp; 积极心理学 | 结果仅供参考</p></div>';
@@ -569,23 +569,7 @@ function drawRadar(dimScores) {
   }
 }
 
-// ===== 导出图片 =====
-function exportImage() {
-  var resultDiv = document.getElementById("result-content");
-  // 简单方案：打印为PDF或提示截图
-  var w = window.open("", "_blank");
-  if (!w) { alert("请允许弹窗后重试"); return; }
-  w.document.write("<!DOCTYPE html><html><head><meta charset='UTF-8'><title>天赋测试结果</title><style>");
-  w.document.write("body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:#fff;padding:20px;max-width:500px;margin:0 auto;color:#333;}");
-  w.document.write("h1{font-size:20px;text-align:center;}");
-  w.document.write(".card{border:1px solid #eee;border-radius:12px;padding:16px;margin:12px 0;}");
-  w.document.write(".bar{height:8px;border-radius:4px;margin:4px 0 10px;}");
-  w.document.write("</style></head><body>");
-  w.document.write("<div>" + resultDiv.innerHTML + "</div>");
-  w.document.write("</body></html>");
-  w.document.close();
-  setTimeout(function(){ w.print(); }, 500);
-}
+// 导出已移除
 </script>
 
 </body>
